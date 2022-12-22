@@ -5,9 +5,9 @@ using Microsoft.Extensions.Logging;
 
 namespace servicebus56fa
 {
-    public class Function1
+    public class ServiceBusQueueTrigger
     {
-        [FunctionName("Function1")]
+        [FunctionName("ServiceBusQueueTrigger")]
         public void Run([ServiceBusTrigger("myqueue", Connection = "serbusconnstring")]string myQueueItem, ILogger log)
         {
             log.LogInformation($"C# ServiceBus queue trigger function processed message: {myQueueItem}");
