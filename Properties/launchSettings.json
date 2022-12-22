@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "servicebus56fa": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7009",
+      "launchBrowser": false
+    }
+  }
+}
